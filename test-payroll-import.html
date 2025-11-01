@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Import Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Payroll Import Test</h1>
+    <p>This test page helps verify the payroll import functionality.</p>
+    
+    <div>
+        <h2>Test Data</h2>
+        <p>Use this sample data to test the import:</p>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th>Employee Code</th>
+                <th>Employee Name</th>
+                <th>Department</th>
+                <th>Contractor</th>
+                <th>No. of Days (Month)</th>
+                <th>No. of Days Present</th>
+                <th>OT Hours</th>
+                <th>Actual Basic</th>
+                <th>Actual HRA</th>
+                <th>Actual Total Salary</th>
+                <th>Earned Basic</th>
+                <th>Earned HRA</th>
+                <th>Earned Salary Cross</th>
+                <th>OT Wages</th>
+                <th>Rent</th>
+                <th>Advance</th>
+                <th>Net Pay</th>
+            </tr>
+            <tr>
+                <td>36050</td>
+                <td>K.Sivasubramanian</td>
+                <td>Accounts</td>
+                <td>R.P.D Facility Management</td>
+                <td>31</td>
+                <td>25</td>
+                <td>8.5</td>
+                <td>25000</td>
+                <td>5000</td>
+                <td>30000</td>
+                <td>25000</td>
+                <td>5000</td>
+                <td>30000</td>
+                <td>4250</td>
+                <td>2000</td>
+                <td>1000</td>
+                <td>31250</td>
+            </tr>
+            <tr>
+                <td>36109</td>
+                <td>Sunil Kumar</td>
+                <td>Hamper assembly</td>
+                <td>R.P.D Facility Management</td>
+                <td>31</td>
+                <td>28</td>
+                <td>12.0</td>
+                <td>22000</td>
+                <td>4400</td>
+                <td>26400</td>
+                <td>22000</td>
+                <td>4400</td>
+                <td>26400</td>
+                <td>6000</td>
+                <td>1500</td>
+                <td>500</td>
+                <td>28900</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Issues Fixed</h2>
+        <ul>
+            <li>✅ Fixed data type conversion issues (ensuring numbers are properly converted)</li>
+            <li>✅ Added proper validation for required fields (Employee Code)</li>
+            <li>✅ Improved error handling with detailed error messages</li>
+            <li>✅ Enhanced logging for debugging import issues</li>
+            <li>✅ Fixed data mapping between frontend and backend</li>
+            <li>✅ Added proper data type casting in backend</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>How to Test</h2>
+        <ol>
+            <li>Create an Excel file with the sample data above</li>
+            <li>Make sure the column headers match exactly</li>
+            <li>Import the file using the payroll import functionality</li>
+            <li>Check the browser console for detailed logging</li>
+            <li>Verify the data appears in the payroll table</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Common Issues and Solutions</h2>
+        <ul>
+            <li><strong>Data not appearing:</strong> Check that Employee Code is not empty and column headers match exactly</li>
+            <li><strong>Import fails:</strong> Check browser console for error messages</li>
+            <li><strong>Numbers not importing correctly:</strong> Ensure Excel cells contain numeric values, not text</li>
+            <li><strong>Missing data:</strong> Verify all required columns are present in the Excel file</li>
+        </ul>
+    </div>
+</body>
+</html>

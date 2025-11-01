@@ -1,0 +1,39 @@
+{
+  "functions": {
+    "targets": [
+      "cms_function",
+      "shiftmap_function",
+      "reports_function",
+      "contracters_function",
+      "candidate_function",
+      "attendance_muster_function",
+      "department_function",
+      "attendance_function",
+      "attendance_job_function",
+      "auth_function",
+      "authorized_portal_function",
+      "criticalincident_function",
+      "designation_function",
+      "ehs_function",
+      "ehsviolation_function",
+      "getuserrole_function",
+      "organization_function",
+      "payment_function",
+      "shift_function",
+      "syncuserroles_function",
+      "contract_function",
+      "statutoryregisters_function",
+      "statutory_function",
+      "getattendancelist",
+      "payroll_function",
+      "network_test",
+      "importattendance_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "app",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}
